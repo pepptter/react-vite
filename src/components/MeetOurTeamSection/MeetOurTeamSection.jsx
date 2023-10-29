@@ -1,3 +1,4 @@
+import './MeetOurTeamSection.css'
 import React from 'react'
 import img_Kristine_Palmer from '@images/Kristine-Palmer.png'
 import img_Mark_Aubri from '@images/Mark-Aubri.png'

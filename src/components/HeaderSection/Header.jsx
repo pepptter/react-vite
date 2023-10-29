@@ -1,5 +1,6 @@
 import React from "react";
 import logotype from "@images/logotype.svg";
+import './Header.css'
 
 const Header = () => {
   return (

@@ -1,0 +1,107 @@
+.meet-our-team {
+    background-color: #F0D082;
+
+    .container {
+        padding-bottom: 50px;
+
+        .section-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+
+            @media (min-width: 992px) {
+                text-align: left;
+                justify-content: space-between;
+            }
+
+        }
+
+        .browse-button {
+            margin-bottom: 50px;
+
+            @media (min-width: 992px) {
+                margin-bottom: 0px;
+            }
+        }
+
+        .btn-transparent {
+            background-color: transparent;
+            border: 1px solid #191919;
+            color: #191919;
+            text-decoration: none;
+            padding: 12px 30px;
+            font-weight: 600;
+            font-size: 16px;
+            border-radius: 25px;
+
+            i {
+                margin-left: 8px;
+                font-size: 0.9em;
+            }
+
+            &:hover {
+                background-color: #191919;
+                color: #F9D783;
+            }
+
+        }
+
+
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .image-text-margin {
+                margin-bottom: 40px;
+            }
+
+            @media (min-width: 992px) {
+                flex-wrap: nowrap;
+                gap: 30px;
+            }
+
+            h3 {
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 22px;
+            }
+
+            p {
+                font-family: Inter, sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+            }
+
+        }
+
+        .dotline {
+            display: none;
+
+            @media (min-width: 992px) {
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+                margin-bottom: 90px;
+                gap: 15px;
+                font-size: 14px;
+            }
+
+            i {
+                opacity: 25%;
+                transition: opacity 0.25s ease-in-out;
+
+                &.active {
+                    opacity: 100%;
+                }
+
+                &:hover {
+                    opacity: 100%;
+                }
+            }
+
+        }
+    }
+}

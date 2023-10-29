@@ -1,0 +1,97 @@
+
+.testimonial {
+    background-color: #F0D082;
+
+
+    .container-fluid {
+        background-color: #ffffff;
+
+        @media (min-width: 1520px) {
+            width: 1520px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .testimonial-box {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+
+
+            @media(min-width: 992px) {
+                justify-content: space-between;
+                margin: 0px 100px 0px 100px;
+                text-align: left;
+            }
+
+            .client-text {
+                i {
+                    color: #F94D1C;
+                }
+
+                .review-text {
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                }
+
+                .rowed {
+                    display: flex;
+                    flex-direction: row;
+                    margin-left: 30px;
+                    @media(min-width: 992px) {
+
+                        margin-left:0px;
+                    }
+                }
+
+                .client-information {
+                    display: flex;
+                    flex-shrink: 0;
+                    flex-direction: column;
+                    margin-left: 20px;
+
+                    h3 {
+                        font-family: 'DM Sans', sans-serif;
+                        font-size: 22px;
+                        font-weight: 700;
+                    }
+
+                    p {
+                        color: #F94D1C;
+                    }
+
+                }
+
+                margin-bottom: 30px;
+
+                @media(min-width: 992px) {
+
+                    flex: 0 0 340px;
+                }
+            }
+
+        }
+
+        .all-reviews {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+            padding-bottom: 120px;
+
+            .btn-black {
+                color: #ffffff;
+
+                &:hover {
+                    color: #191919;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 992px) {
+        padding-bottom: 120px;
+    }
+}

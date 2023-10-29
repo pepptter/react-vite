@@ -1,3 +1,4 @@
+import './AboutCompanySection.css'
 import React from 'react'
 import img_samantha_image from '@images/samantha-image.jpg'
 

@@ -1,3 +1,4 @@
+import './ArticleAndNewsSection.css'
 import React from 'react'
 import img_mar_25 from '@images/mar-25-image.png'
 import img_mar_17 from '@images/mar-17-image.png'

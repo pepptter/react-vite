@@ -1,0 +1,106 @@
+.about-company {
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+@media (min-width: 992px) {
+  .about-company {
+    margin-bottom: 120px;
+  }
+}
+.about-company .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-company .container .founder {
+  position: relative;
+  z-index: -1;
+}
+.about-company .container .founder img {
+  max-width: 100%;
+}
+@media (min-width: 992px) {
+  .about-company .container .founder {
+    flex: 0 0 50%;
+  }
+}
+.about-company .container .founder-information-box {
+  position: absolute;
+  z-index: 0;
+  width: 75%;
+  height: auto;
+  background-color: #BEEBFF;
+  bottom: 0px;
+  left: 0px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+@media (min-width: 992px) {
+  .about-company .container .founder-information-box {
+    flex: 0 0 50%;
+    bottom: 42px;
+    left: -42px;
+    width: 368px;
+  }
+}
+.about-company .container .founder-information-box .founder-text {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.about-company .container .founder-information-box .founder-text h5 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #191919;
+}
+.about-company .container .founder-information-box .founder-text h5 .founder-red {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #F94D1C;
+}
+.about-company .container .founder-information-box .founder-text .founder-paragraph {
+  margin-top: 14px;
+  font-style: italic;
+  font-weight: 500;
+}
+.about-company .container .about-company-box {
+  text-align: center;
+  max-width: 532px;
+}
+@media (min-width: 1400px) {
+  .about-company .container .about-company-box {
+    flex: 0 0 calc(50% - 50px);
+    text-align: left;
+    max-height: 589px;
+    margin-left: 50px;
+  }
+}
+.about-company .container .about-company-box .colorwhite {
+  color: white;
+}
+.about-company .container .about-company-box .colorwhite:hover {
+  color: #191919;
+}
+.about-company .container .about-company-box .paragraph {
+  color: #191919;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.about-company .container .about-company-box .flex-text {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #191919;
+}
+.about-company .container .about-company-box .flex-text:hover .btn-round-transparent {
+  transition: font-weight 0.25s ease-in-out, background-color 0.2s ease-in-out, color 0.25s ease-in-out;
+  color: #ffffff;
+  background-color: #191919;
+}
+.about-company .container .about-company-box .flex-text:hover .margin {
+  text-decoration: underline;
+  font-weight: 600;
+}
+.about-company .container .margin {
+  margin-left: 10px;
+}

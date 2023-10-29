@@ -1,0 +1,99 @@
+.features {
+  display: block;
+}
+.features .logotypes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+@media (min-width: 992px) {
+  .features .logotypes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 70px 0px 0px 0px;
+    margin-left: 200px;
+    margin-right: 200px;
+    gap: 50px;
+  }
+}
+.features .features-section {
+  display: flex;
+}
+.features .features-section .container {
+  border: 1px solid #191919;
+  text-align: center;
+  margin-top: 40px;
+}
+@media (min-width: 992px) {
+  .features .features-section .container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1520px;
+    text-align: left;
+  }
+}
+.features .features-section .container .section-title .btn-learn-more {
+  padding: 25px 100px 25px 100px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  border-radius: 50px;
+}
+@media (min-width: 992px) {
+  .features .features-section .container .section-title .btn-learn-more {
+    padding: 10px 150px 10px 150px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 25px;
+  }
+}
+.features .features-section .container .section-title p {
+  margin-bottom: 17px;
+}
+@media (min-width: 992px) {
+  .features .features-section .container .section-title {
+    flex: 0 0 30%;
+    text-align: left;
+    margin-left: 70px;
+    margin-right: 120px;
+    padding-top: 0px;
+  }
+}
+.features .features-section .container .features-grid {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.features .features-section .container .features-grid .m-between-icon-text {
+  margin-bottom: 40px;
+}
+.features .features-section .container .features-grid a {
+  text-decoration: none;
+  color: #191919;
+}
+.features .features-section .container .features-grid a h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.features .features-section .container .features-grid a p {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.features .features-section .container .gapflex {
+  display: none;
+}
+@media (min-width: 992px) {
+  .features .features-section .container .gapflex {
+    display: flex;
+    flex: 0 0 20%;
+  }
+}

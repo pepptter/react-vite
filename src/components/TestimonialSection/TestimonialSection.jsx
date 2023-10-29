@@ -1,3 +1,4 @@
+import './TestimonialSection.css'
 import React from 'react'
 import img_Cassandra_Warren from '@images/Cassandra-Warren.png'
 import img_Amanda_Tulling from '@images/Amanda-Tulling.png'

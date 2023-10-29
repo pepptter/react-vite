@@ -1,3 +1,4 @@
+import './ProjectAndCaseStudiesSection.css'
 import React from 'react'
 import img_article_image_1 from '@images/article-image-1.png'
 import img_article_image_2 from '@images/article-image-2.png'

@@ -1,0 +1,56 @@
+.newsletter {
+    position: relative;
+    background-color: #f0efe9;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    z-index: 0;
+
+    .background-wavy-lines {
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+        z-index: -1;
+
+        @media (min-width: 992px) {
+            bottom: 48px;
+        }
+    }
+
+    .container {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 0px;
+
+        h2 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 40px;
+            font-weight: 700;
+
+            @media (min-width: 768px) {
+                font-size: 45px;
+            }
+        }
+
+        form {
+            input {
+                color: #191919;
+                text-decoration: none;
+                padding: 15px 30px;
+                font-size: 16px;
+                border-radius: 25px;
+                outline: none;
+                border: 1px solid rgba(25, 25, 25, 0.10);
+                margin-right: 20px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

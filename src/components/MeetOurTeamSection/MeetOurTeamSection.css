@@ -1,0 +1,92 @@
+.meet-our-team {
+  background-color: #F0D082;
+}
+.meet-our-team .container {
+  padding-bottom: 50px;
+}
+.meet-our-team .container .section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .meet-our-team .container .section-header {
+    text-align: left;
+    justify-content: space-between;
+  }
+}
+.meet-our-team .container .browse-button {
+  margin-bottom: 50px;
+}
+@media (min-width: 992px) {
+  .meet-our-team .container .browse-button {
+    margin-bottom: 0px;
+  }
+}
+.meet-our-team .container .btn-transparent {
+  background-color: transparent;
+  border: 1px solid #191919;
+  color: #191919;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+}
+.meet-our-team .container .btn-transparent i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.meet-our-team .container .btn-transparent:hover {
+  background-color: #191919;
+  color: #F9D783;
+}
+.meet-our-team .container .team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.meet-our-team .container .team-members .image-text-margin {
+  margin-bottom: 40px;
+}
+@media (min-width: 992px) {
+  .meet-our-team .container .team-members {
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+}
+.meet-our-team .container .team-members h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.meet-our-team .container .team-members p {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.meet-our-team .container .dotline {
+  display: none;
+}
+@media (min-width: 992px) {
+  .meet-our-team .container .dotline {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    gap: 15px;
+    font-size: 14px;
+  }
+}
+.meet-our-team .container .dotline i {
+  opacity: 25%;
+  transition: opacity 0.25s ease-in-out;
+}
+.meet-our-team .container .dotline i.active {
+  opacity: 100%;
+}
+.meet-our-team .container .dotline i:hover {
+  opacity: 100%;
+}

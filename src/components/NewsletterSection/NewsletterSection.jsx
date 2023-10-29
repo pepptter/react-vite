@@ -1,3 +1,4 @@
+import './NewsletterSection.css'
 import React from 'react'
 import img_background_wavy_lines from '@images/background-wavy-lines.svg'
 

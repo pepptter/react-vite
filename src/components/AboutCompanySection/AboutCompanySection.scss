@@ -1,0 +1,132 @@
+.about-company {
+    margin-top: 120px;
+    margin-bottom: 80px;
+    @media (min-width: 992px){
+        margin-bottom: 120px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+
+        .founder {
+
+            position: relative;
+            z-index: -1;
+
+            img {
+                max-width: 100%;
+            }
+
+            @media (min-width: 992px) {
+                flex: 0 0 50%;
+            }
+
+        }
+
+        .founder-information-box {
+            position: absolute;
+            z-index: 0;
+            width: 75%;
+            height: auto;
+            background-color: #BEEBFF;
+            bottom: 0px;
+            left: 0px;
+            max-width: fit-content;
+
+            @media (min-width: 992px) {
+                flex: 0 0 50%;
+                bottom: 42px;
+                left: -42px;
+                width: 368px;
+            }
+
+            .founder-text {
+                margin-top: 20px;
+                margin-left: 20px;
+
+                h5 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #191919;
+
+                    .founder-red {
+                        font-family: 'Inter', sans-serif;
+                        font-size: 16px;
+                        color: #F94D1C;
+                    }
+                }
+
+                .founder-paragraph {
+                    margin-top: 14px;
+                    font-style: italic;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .about-company-box {
+            text-align: center;
+            max-width: 532px;
+
+            @media (min-width: 1400px) {
+                flex: 0 0 calc(50% - 50px);
+                text-align: left;
+                max-height: 589px;
+                margin-left: 50px;
+            }
+
+            .colorwhite {
+                color: white;
+            }
+
+            .colorwhite:hover {
+                color: #191919;
+            }
+
+            .paragraph {
+                color: #191919;
+                font-family: 'Inter', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            .flex-text {
+                margin-left: 20px;
+                text-decoration: none;
+                color: #191919;
+
+                &:hover {
+
+                    .btn-round-transparent {
+                        transition: font-weight 0.25s ease-in-out, background-color 0.2s ease-in-out, color 0.25s ease-in-out;
+
+                        color: #ffffff;
+                        background-color: #191919;
+                    }
+
+                    .margin {
+                        text-decoration: underline;
+                        font-weight: 600;
+
+                    }
+
+                }
+
+
+
+            }
+
+        }
+
+        .margin {
+            margin-left: 10px;
+
+        }
+    }
+
+
+}

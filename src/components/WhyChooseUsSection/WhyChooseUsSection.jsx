@@ -1,3 +1,4 @@
+import './WhyChooseUsSection.css'
 import React from 'react'
 import img_why_choose_us from '@images/why-choose-us-picture.jpg'
 

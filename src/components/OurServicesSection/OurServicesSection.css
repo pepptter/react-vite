@@ -1,0 +1,120 @@
+.our-services {
+  background-color: #F0EFE9;
+  position: relative;
+  z-index: 0;
+}
+.our-services .background-lines {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .our-services .background-lines img {
+    max-width: 100%;
+  }
+}
+.our-services .container .flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+@media (min-width: 992px) {
+  .our-services .container .flexbox {
+    flex-wrap: nowrap;
+  }
+}
+.our-services .container .flex-item {
+  text-decoration: none;
+  color: #191919;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #ffffff;
+  transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
+}
+.our-services .container .flex-item:hover {
+  background-color: #F9D783;
+}
+.our-services .container .flex-item:hover .arrowbutton .button-round {
+  color: #191919;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+@media (min-width: 992px) {
+  .our-services .container .flex-item {
+    width: 308px;
+    height: 330px;
+  }
+}
+.our-services .container .flex-item .flex-underline {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.our-services .container .flex-item a {
+  text-decoration: none;
+  color: #191919;
+}
+.our-services .container .flex-item a h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.our-services .container .flex-item a p {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.our-services .container .flex-item.item-active {
+  background-color: #F9D783;
+}
+.our-services .container .flex-item .arrowbutton {
+  display: flex;
+  justify-content: flex-end;
+}
+.our-services .container .flex-item .arrowbutton .button-round {
+  display: inline-block;
+  background-color: #191919;
+  border-radius: 50%;
+  border: 3px solid #191919;
+  width: 46px;
+  height: 46px;
+  text-align: center;
+  line-height: 42px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.our-services .container .flex-item .arrowbutton .button-round.button-active {
+  color: #191919;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+.our-services .container .browse-button {
+  margin-top: 50px;
+  margin-bottom: 120px;
+}
+.our-services .container .btn-transparent {
+  background-color: transparent;
+  border: 1px solid #191919;
+  color: #191919;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+}
+.our-services .container .btn-transparent i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.our-services .container .btn-transparent:hover {
+  background-color: #191919;
+  color: #F9D783;
+}
+.our-services .container .paragraph {
+  color: #191919;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}

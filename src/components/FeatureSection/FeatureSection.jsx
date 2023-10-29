@@ -1,3 +1,4 @@
+import './FeatureSection.css'
 import React from 'react'
 import img_paperz_logo from '@images/paperz-logo.png'
 import img_dorfus_logo from '@images/dorfus-logo.png'

@@ -1,0 +1,83 @@
+.testimonial {
+  background-color: #F0D082;
+}
+.testimonial .container-fluid {
+  background-color: #ffffff;
+}
+@media (min-width: 1520px) {
+  .testimonial .container-fluid {
+    width: 1520px;
+  }
+}
+.testimonial .container-fluid .section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.testimonial .container-fluid .testimonial-box {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .testimonial .container-fluid .testimonial-box {
+    justify-content: space-between;
+    margin: 0px 100px 0px 100px;
+    text-align: left;
+  }
+}
+.testimonial .container-fluid .testimonial-box .client-text {
+  margin-bottom: 30px;
+}
+.testimonial .container-fluid .testimonial-box .client-text i {
+  color: #F94D1C;
+}
+.testimonial .container-fluid .testimonial-box .client-text .review-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.testimonial .container-fluid .testimonial-box .client-text .rowed {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+}
+@media (min-width: 992px) {
+  .testimonial .container-fluid .testimonial-box .client-text .rowed {
+    margin-left: 0px;
+  }
+}
+.testimonial .container-fluid .testimonial-box .client-text .client-information {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.testimonial .container-fluid .testimonial-box .client-text .client-information h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+.testimonial .container-fluid .testimonial-box .client-text .client-information p {
+  color: #F94D1C;
+}
+@media (min-width: 992px) {
+  .testimonial .container-fluid .testimonial-box .client-text {
+    flex: 0 0 340px;
+  }
+}
+.testimonial .container-fluid .all-reviews {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  padding-bottom: 120px;
+}
+.testimonial .container-fluid .all-reviews .btn-black {
+  color: #ffffff;
+}
+.testimonial .container-fluid .all-reviews .btn-black:hover {
+  color: #191919;
+}
+@media (min-width: 992px) {
+  .testimonial {
+    padding-bottom: 120px;
+  }
+}

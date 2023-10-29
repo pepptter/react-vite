@@ -1,0 +1,100 @@
+.article-and-news .container .section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.article-and-news .container .section-header .browse-button {
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+@media (min-width: 992px) {
+  .article-and-news .container .section-header .browse-button {
+    margin-top: 100px;
+    margin-bottom: 0px;
+  }
+}
+.article-and-news .container .section-header .section-title {
+  padding-bottom: 36px;
+}
+@media (min-width: 992px) {
+  .article-and-news .container .section-header {
+    text-align: left;
+    justify-content: space-between;
+  }
+}
+.article-and-news .container .articles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.article-and-news .container .articles a {
+  text-decoration: none;
+  color: #191919;
+}
+@media (min-width: 992px) {
+  .article-and-news .container .articles {
+    flex-wrap: nowrap;
+  }
+}
+.article-and-news .container .articles .article-item {
+  position: relative;
+}
+@media (max-width: 720px) {
+  .article-and-news .container .articles .article-item img {
+    max-width: 100%;
+  }
+}
+.article-and-news .container .articles .article-item .date-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 56px;
+  height: 64px;
+  background-color: #f9d783;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.article-and-news .container .articles .article-item .date-box h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: -4px;
+}
+.article-and-news .container .articles .article-item .article-texts p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.article-and-news .container .articles .article-item .article-texts h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: -4px;
+}
+.article-and-news .container .dotline {
+  display: none;
+}
+@media (min-width: 992px) {
+  .article-and-news .container .dotline {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    gap: 15px;
+    font-size: 14px;
+  }
+  .article-and-news .container .dotline i {
+    transition: opacity 0.25s ease-in-out;
+    opacity: 25%;
+  }
+  .article-and-news .container .dotline i.active {
+    opacity: 100%;
+  }
+  .article-and-news .container .dotline i:hover {
+    opacity: 100%;
+  }
+}

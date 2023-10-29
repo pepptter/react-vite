@@ -1,13 +1,16 @@
+import './FooterLinksSection.css'
 import React from 'react'
+import img_background_lines_white_right from '@images/background-lines-white-right.svg'
+import crito_logo_white from '@images/logotype-white.svg'
 
 const FooterLinksSection = () => {
   return (
     <section className="footer-links">
-    <img className="background-lines" src="images/background-lines-white-right.svg" alt=""/>
+    <img className="background-lines" src={img_background_lines_white_right} alt=""/>
     <div className="container">
       <div className="logo-and-text">
         <a href="index.html">
-          <img src="images/logotype-white.svg" alt="Crito Logotype"/>
+          <img src={crito_logo_white} alt="Crito Logotype"/>
         </a>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Placeat obcaecati voluptas voluptates!
