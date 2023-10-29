@@ -1,7 +1,8 @@
-import './OurServiceSection.css'
+import './OurServicesSection.css'
 import React from 'react'
 import img_lines_white_big_right from '@images/lines-white-big-right.svg'
 import ServiceBox from './ServiceBox'
+import Button from '../Generics/Button'
 
 const OurServicesSection = () => {
   return (
@@ -16,19 +17,13 @@ const OurServicesSection = () => {
           </div>
 
           <div className="flexbox">
-              <ServiceBox title="Business Advice" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Officiis in nam possimus." url="/businessadvice"/>
-              <ServiceBox title="Startup Business" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Officiis in nam possimus." url="/startupbusiness"/>
-              <ServiceBox title="Financial Advice" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Officiis in nam possimus." url="/financialadvice"/>
-              <ServiceBox className="flex-item item-active" title="Risk Management" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Officiis in nam possimus." url="/riskmanagement"/>
+              <ServiceBox title="Business Advice" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="/businessadvice"/>
+              <ServiceBox  title="Startup Business" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="/startupbusiness" classes="item-active"/>
+              <ServiceBox title="Financial Advice" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="/financialadvice"/>
+              <ServiceBox title="Risk Management" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="/riskmanagement"/>
           </div>
           <div className="center-content">
-            <a href="#" className="btn-transparent browse-button">
-              Browse Services<i className="fa-solid fa-square-up-right"></i>
-            </a>
+            <Button type="transparent" text="Browse Services" url="/services"/>
           </div>
 
 

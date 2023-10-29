@@ -37,15 +37,15 @@
     text-align: left;
   }
 }
-.features .features-section .container .section-title .btn-learn-more {
-  padding: 25px 100px 25px 100px;
+.features .features-section .container .section-title .btn-yellow {
+  padding: 20px 100px 20px 100px;
   font-family: Inter, sans-serif;
   font-weight: 600;
   font-size: 24px;
   border-radius: 50px;
 }
 @media (min-width: 992px) {
-  .features .features-section .container .section-title .btn-learn-more {
+  .features .features-section .container .section-title .btn-yellow {
     padding: 10px 150px 10px 150px;
     font-weight: 600;
     font-size: 16px;

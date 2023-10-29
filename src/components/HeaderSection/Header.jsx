@@ -1,6 +1,7 @@
 import React from "react";
 import logotype from "@images/logotype.svg";
 import './Header.css'
+import Button from "../Generics/Button";
 
 const Header = () => {
   return (
@@ -43,7 +44,7 @@ const Header = () => {
               <i className="fa-brands fa-linkedin"></i>
             </a>
           </div>
-          <div className="menu">
+          <div className="menu pt-4">
             <nav>
               <a className="active" href="index.html">
                 Home
@@ -52,9 +53,7 @@ const Header = () => {
               <a href="news.html">News</a>
               <a href="contact.html">Contact</a>
             </nav>
-            <a className="btn-yellow btn-login" href="login.html">
-              Login <i className="fa-solid fa-square-up-right"></i>
-            </a>
+            <Button type="yellow" text="Login" url="/login"/>
           </div>
         </div>
       </header>

@@ -109,7 +109,3 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   bottom: -3px;
   transform: translate(calc(50% - 15px));
 }
-header .container .menu .btn-login {
-  padding-top: 12px;
-  padding-bottom: 12px;
-}

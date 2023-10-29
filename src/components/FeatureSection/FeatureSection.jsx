@@ -5,6 +5,7 @@ import img_dorfus_logo from '@images/dorfus-logo.png'
 import img_martino_logo from '@images/martino-logo.png'
 import img_square_logo from '@images/square-logo.png'
 import img_gobona_logo from '@images/gobona-logo.png'
+import Button from '../Generics/Button'
 
 const FeatureSection = () => {
   return (
@@ -21,10 +22,8 @@ const FeatureSection = () => {
           <div className="container">
             <div className="section-title">
               <p>Features</p>
-              <h2>Our Accounting is trusted by thousand of companies</h2>
-              <button className="btn-yellow btn-learn-more">
-                Learn More<i className="fa-solid fa-square-up-right"></i>
-              </button>
+              <h2 className="mb-5">Our Accounting is trusted by thousand of companies</h2>
+              <Button type="yellow" text="Learn More" url="/features"/>
             </div>
             <div className="features-grid">
               <a href="#" className="flex-item">

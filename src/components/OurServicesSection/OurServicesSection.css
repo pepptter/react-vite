@@ -1,3 +1,8 @@
+.btn-transparent {
+  margin-top: 50px;
+  margin-bottom: 120px;
+}
+
 .our-services {
   background-color: #F0EFE9;
   position: relative;
@@ -89,10 +94,6 @@
   color: #191919;
   background-color: #ffffff;
   border-color: #ffffff;
-}
-.our-services .container .browse-button {
-  margin-top: 50px;
-  margin-bottom: 120px;
 }
 .our-services .container .btn-transparent {
   background-color: transparent;
