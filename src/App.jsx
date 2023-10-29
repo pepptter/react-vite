@@ -4,11 +4,13 @@ import Home from './views/Home'
 
 function App() {
   return (
+    <div className="wrapper">
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}></Route>
       </Routes>
     </BrowserRouter>
+    </div>
   )
 }
 
