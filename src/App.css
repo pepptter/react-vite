@@ -894,12 +894,12 @@ header .container .menu .btn-login {
 }
 .testimonial .container-fluid .testimonial-box {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   text-align: center;
 }
 @media (min-width: 992px) {
   .testimonial .container-fluid .testimonial-box {
+    justify-content: space-between;
     margin: 0px 100px 0px 100px;
     text-align: left;
   }
@@ -917,6 +917,12 @@ header .container .menu .btn-login {
 .testimonial .container-fluid .testimonial-box .client-text .rowed {
   display: flex;
   flex-direction: row;
+  margin-left: 30px;
+}
+@media (min-width: 992px) {
+  .testimonial .container-fluid .testimonial-box .client-text .rowed {
+    margin-left: 0px;
+  }
 }
 .testimonial .container-fluid .testimonial-box .client-text .client-information {
   display: flex;
