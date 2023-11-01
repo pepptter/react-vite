@@ -3,15 +3,16 @@ import React from 'react'
 import img_background_lines_white_right from '@images/background-lines-white-right.svg'
 import crito_logo_white from '@images/logotype-white.svg'
 
+import { NavLink } from 'react-router-dom'
 const FooterLinksSection = () => {
   return (
     <section className="footer-links">
     <img className="background-lines" src={img_background_lines_white_right} alt=""/>
     <div className="container">
       <div className="logo-and-text">
-        <a href="index.html">
+        <NavLink to="/">
           <img src={crito_logo_white} alt="Crito Logotype"/>
-        </a>
+        </NavLink>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Placeat obcaecati voluptas voluptates!
           Voluptates laborum nam ratione minus necessitatibus, iure praesentium.</p>

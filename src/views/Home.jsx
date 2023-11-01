@@ -16,25 +16,27 @@ import FooterCRAndSMSection from '../components/Footer/FooterCRAndSMSection'
 const Home = () => {
   return (
     <>
-        <header>
-          <Header />
-        </header>
-        <main>
-          <Showcase />
-          <FeatureSection />
-          <AboutCompanySection />
-          <OurServicesSection />
-          <WhyChooseUsSection />
-          <ProjectAndCaseStudiesSection />
-          <MeetOurTeamSection />
-          <TestimonialSection />
-          <ArticleAndNewsSection />
-          <NewsletterSection />
-        </main>
-        <footer>
-          <FooterLinksSection />
-          <FooterCRAndSMSection />
-        </footer>
+      <div className="wrapper">
+          <header>
+            <Header />
+          </header>
+          <main>
+            <Showcase />
+            <FeatureSection />
+            <AboutCompanySection />
+            <OurServicesSection />
+            <WhyChooseUsSection />
+            <ProjectAndCaseStudiesSection />
+            <MeetOurTeamSection />
+            <TestimonialSection />
+            <ArticleAndNewsSection />
+            <NewsletterSection />
+          </main>
+          <footer>
+            <FooterLinksSection />
+            <FooterCRAndSMSection />
+          </footer>
+        </div>
     </>
   )
 }

@@ -2,6 +2,7 @@ import React from "react";
 import logotype from "@images/logotype.svg";
 import './Header.css'
 import Button from "../Generics/Button";
+import { NavLink, Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -12,10 +13,10 @@ const Header = () => {
             <i className="fa-solid fa-bars-staggered"></i>
           </button>
           <div className="logotype">
-            <a href="index.html">
+            <Link to="/">
               <img src={logotype} alt="Crito Logotype" />
-            </a>
-          </div>
+            </Link>
+            </div>
           <div className="contact-information-bar">
             <div className="content-box">
               <i className="fa-solid fa-phone-volume"></i>
@@ -46,13 +47,11 @@ const Header = () => {
           </div>
           <div className="menu pt-4">
             <nav>
-              <a className="active" href="index.html">
-                Home
-              </a>
-              <a href="services.html">Services</a>
-              <a href="news.html">News</a>
-              <a href="contact.html">Contact</a>
-            </nav>
+              <NavLink to="/">Home</NavLink>
+              <NavLink to="/services">Services</NavLink>
+              <NavLink to="/news">News</NavLink>
+              <NavLink to="/contact">Contact</NavLink>
+              </nav>
             <Button type="yellow" text="Login" url="/login"/>
           </div>
         </div>

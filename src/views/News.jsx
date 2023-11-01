@@ -3,7 +3,7 @@ import Header from '../components/HeaderSection/Header'
 import FooterCRAndSMSection from '../components/Footer/FooterCRAndSMSection'
 import FooterLinksSection from '../components/Footer/FooterLinksSection'
 
-const Contact = () => {
+const News = () => {
   return (
     <>
     <div className="wrapper">
@@ -21,4 +21,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default News

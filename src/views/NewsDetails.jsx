@@ -1,12 +1,14 @@
 import React from 'react'
+import Header from '../components/HeaderSection/Header'
 import FooterCRAndSMSection from '../components/Footer/FooterCRAndSMSection'
 import FooterLinksSection from '../components/Footer/FooterLinksSection'
 
-const NotFound = () => {
+const NewsDetails = () => {
   return (
     <>
       <div className="wrapper">
           <header>
+            <Header />
           </header>
           <main>
           </main>
@@ -19,4 +21,4 @@ const NotFound = () => {
   )
 }
 
-export default NotFound
+export default NewsDetails
