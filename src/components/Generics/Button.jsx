@@ -1,7 +1,6 @@
 import React from 'react'
 
-const Button = ({type, text, url, classes}) => {
-
+const Button = ({type, text, url, classesArray = []}) => {
 
     const getButtonType = () => {
         switch(type) {
@@ -14,16 +13,23 @@ const Button = ({type, text, url, classes}) => {
             default:
                 return 'btn-black';
         }
-
-
     }
-  return (
-        <a className={getButtonType()} href={url}>
-            {text}
-            <i className="fa-solid fa-square-up-right"></i>
-        </a>
 
-    )
+    if(classesArray.length > 0) {
+        return (
+            <a className={`${getButtonType()}`} href={url}>
+                <i className={`${classesArray.join(' ')}`}>
+                </i>
+            </a>
+        )
+    }else{
+        return (
+                <a className={getButtonType()} href={url}>
+                    {text}
+                    <i className="fa-solid fa-square-up-right"></i>
+                </a>
+            )
+    }
 }
 
 export default Button

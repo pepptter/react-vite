@@ -1,6 +1,7 @@
 import './WhyChooseUsSection.css'
 import React from 'react'
 import img_why_choose_us from '@images/why-choose-us-picture.jpg'
+import WhyChooseUsComponent from './WhyChooseUsComponent'
 
 const WhyChooseUsSection = () => {
   return (
@@ -12,53 +13,18 @@ const WhyChooseUsSection = () => {
               <h2>Why We Are The Best Business Consulting Agency</h2>
             </div>
             <div className="flex-texts">
-              <a href="#" className="flex-item">
-                <div className="text-icon">
-                  <i className="fa-regular fa-thumbs-up"></i>
-                </div>
-                <div className="text-item">
-                  <h3>Process Excellence</h3>
-                  <p>Lorem, ipsum dolor sit amet consectetur.</p>
-                </div>
-              </a>
-              <a href="#" className="flex-item">
-                <div className="text-icon">
-                  <i className="fa-regular fa-sun"></i>
-                </div>
-                <div className="text-item">
-                  <h3>Strategic Planning</h3>
-                  <p>Lorem, ipsum dolor sit amet consectetur.</p>
-                </div>
-              </a>
-              <a href="#" className="flex-item">
-                <div className="text-icon">
-                  <i className="fa-solid fa-pen-clip"></i>
-                </div>
-                <div className="text-item">
-                  <h3>Experience Design</h3>
-                  <p>Lorem, ipsum dolor sit amet consectetur.</p>
-                </div>
-              </a>
-              <a href="#" className="flex-item">
-                <div className="text-icon">
-                  <i className="fa-solid fa-gears"></i>
-                </div>
-                <div className="text-item">
-                  <h3>Artificial Intelligence</h3>
-                  <p>Lorem, ipsum dolor sit amet consectetur.</p>
-                </div>
-              </a>
+              <WhyChooseUsComponent title="Process Excellence" description="Lorem, ipsum dolor sit amet consectetur." url="/processexcellence" classesArray={["fa-regular", "fa-thumbs-up"]} />
+              <WhyChooseUsComponent title="Strategic Planning" description="Lorem, ipsum dolor sit amet consectetur." url="/strategicplanning" classesArray={["fa-regular", "fa-sun"]} />
+              <WhyChooseUsComponent title="Experience Design" description="Lorem, ipsum dolor sit amet consectetur." url="/experiencedesign" classesArray={["fa-solid", "fa-pen-clip"]} />
+              <WhyChooseUsComponent title="Artificial Intelligence" description="Lorem, ipsum dolor sit amet consectetur." url="/artificialintelligence" classesArray={["fa-solid", "fa-gears"]} />
             </div>
           </div>
           <div className="image-area">
             <img className="why-choose-us-image" src={img_why_choose_us}
               alt="Two women sitting in an office looking at a tablet" />
-            <div className="image-box">
-
-            </div>
+            <div className="image-box"></div>
           </div>
         </div>
-
       </section>
   )
 }

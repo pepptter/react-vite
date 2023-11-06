@@ -1,0 +1,9 @@
+.text-placement {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: block;
+  text-align: center;
+}
+.text-placement .not-found-text {
+  padding-bottom: 30px;
+}

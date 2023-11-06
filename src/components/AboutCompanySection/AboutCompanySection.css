@@ -75,12 +75,6 @@
     margin-left: 50px;
   }
 }
-.about-company .container .about-company-box .colorwhite {
-  color: white;
-}
-.about-company .container .about-company-box .colorwhite:hover {
-  color: #191919;
-}
 .about-company .container .about-company-box .paragraph {
   color: #191919;
   font-family: "Inter", sans-serif;
@@ -88,19 +82,16 @@
   font-weight: 400;
 }
 .about-company .container .about-company-box .flex-text {
-  margin-left: 20px;
+  margin-left: 15px;
   text-decoration: none;
   color: #191919;
+}
+.about-company .container .about-company-box .flex-text:hover {
+  text-decoration: underline;
+  font-weight: 600;
 }
 .about-company .container .about-company-box .flex-text:hover .btn-round-transparent {
   transition: font-weight 0.25s ease-in-out, background-color 0.2s ease-in-out, color 0.25s ease-in-out;
   color: #ffffff;
   background-color: #191919;
-}
-.about-company .container .about-company-box .flex-text:hover .margin {
-  text-decoration: underline;
-  font-weight: 600;
-}
-.about-company .container .margin {
-  margin-left: 10px;
 }

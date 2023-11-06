@@ -1,6 +1,7 @@
 import React from 'react'
 import FooterCRAndSMSection from '../components/Footer/FooterCRAndSMSection'
 import FooterLinksSection from '../components/Footer/FooterLinksSection'
+import NotFoundSection from '../components/NotFoundSection/NotFoundSection'
 
 const NotFound = () => {
   return (
@@ -9,6 +10,7 @@ const NotFound = () => {
           <header>
           </header>
           <main>
+            <NotFoundSection />
           </main>
           <footer>
             <FooterLinksSection />

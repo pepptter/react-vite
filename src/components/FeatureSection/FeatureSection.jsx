@@ -6,16 +6,17 @@ import img_martino_logo from '@images/martino-logo.png'
 import img_square_logo from '@images/square-logo.png'
 import img_gobona_logo from '@images/gobona-logo.png'
 import Button from '../Generics/Button'
+import Feature from './Feature'
 
 const FeatureSection = () => {
   return (
     <section className="features">
         <div className="logotypes">
-          <img className="flex-item" src={img_paperz_logo} alt="paperz logotype" />
-          <img className="flex-item" src={img_dorfus_logo} alt="dorfus logotype" />
-          <img className="flex-item" src={img_martino_logo} alt="martino logotype" />
-          <img className="flex-item" src={img_square_logo} alt="square logotype" />
-          <img className="flex-item" src={img_gobona_logo} alt="gobona logotype" />
+          <img src={img_paperz_logo} alt="paperz logotype" />
+          <img src={img_dorfus_logo} alt="dorfus logotype" />
+          <img src={img_martino_logo} alt="martino logotype" />
+          <img src={img_square_logo} alt="square logotype" />
+          <img src={img_gobona_logo} alt="gobona logotype" />
         </div>
 
         <div className="features-section">
@@ -26,34 +27,10 @@ const FeatureSection = () => {
               <Button type="yellow" text="Learn More" url="/features"/>
             </div>
             <div className="features-grid">
-              <a href="#" className="flex-item">
-                <i className="fa-regular fa-handshake fa-2xl m-between-icon-text"></i>
-                <h3>Business Advice</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-              </a>
-              <a href="#" className="flex-item">
-                <i className="fa-regular fa-lightbulb fa-2xl m-between-icon-text"></i>
-                <h3>Startup Business</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-              </a>
-              <a href="#" className="flex-item">
-                <i className="fa-solid fa-chart-line fa-2xl m-between-icon-text"></i>
-                <h3>Financial Advice</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-              </a>
-              <a href="#" className="flex-item">
-                <i className="fa-solid fa-cubes fa-2xl m-between-icon-text"></i>
-                <h3>Risk Management</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-              </a>
+              <Feature title="Business Advice" description="Lorem ipsum dolor sit amet consectetur adipisicing elit." url="/businessadvice" classesArray={["fa-regular", "fa-handshake", "fa-2xl", "m-between-icon-text"]} />
+              <Feature title="Startup Business" description="Lorem ipsum dolor sit amet consectetur adipisicing elit." url="/startup" classesArray={["fa-regular", "fa-lightbulb", "fa-2xl", "m-between-icon-text"]} />
+              <Feature title="Financial Advice" description="Lorem ipsum dolor sit amet consectetur adipisicing elit." url="/financialadvice" classesArray={["fa-solid", "fa-chart-line", "fa-2xl", "m-between-icon-text"]} />
+              <Feature title="Risk Management" description="Lorem ipsum dolor sit amet consectetur adipisicing elit." url="/riskmanagement" classesArray={["fa-solid", "fa-cubes", "fa-2xl", "m-between-icon-text"]} />
             </div>
             <div className="gapflex"></div>
           </div>

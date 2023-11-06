@@ -1,0 +1,13 @@
+göra klart contactsidan utom formulär!! CHECK!!
+
+
+allt som ska göras om till components (VÄNTAR MED LOGOS HOOKS?)
+
+NEWS?
+
+hooks?
+
+formuläret!
+alla knappar CHECK utom > ? knappen för newsletter SIGNUP formuläret??
+
+

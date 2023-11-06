@@ -1,0 +1,47 @@
+.lets-connect-section {
+    background-color: #F0EFE9;
+    position: relative;
+
+    img {
+        max-width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    .container {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        @media (min-width: 992px) {
+            padding-top: 100px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-bottom: 30px;
+
+            a {
+                text-decoration: none;
+                color: #191919;
+            }
+
+        }
+
+        .lets-connect-text {
+            margin-bottom: 100px;
+
+            h2 {
+                font-family: 'DM Sans', sans-serif;
+                font-size: 56px;
+                font-weight: 700;
+            }
+        }
+
+    }
+}

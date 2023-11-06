@@ -3,6 +3,8 @@ import React from 'react'
 import img_Cassandra_Warren from '@images/Cassandra-Warren.png'
 import img_Amanda_Tulling from '@images/Amanda-Tulling.png'
 import img_Jack_Mcdogglas from '@images/Jack-McDogglas.png'
+import Testimonial from './Testimonial'
+import Button from '../Generics/Button'
 
 const TestimonialSection = () => {
   return (
@@ -13,63 +15,21 @@ const TestimonialSection = () => {
             <h2>What Our Client Says</h2>
           </div>
           <div className="testimonial-box">
-            <div className="client-text">
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-              <p className="review-text">"Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            <Testimonial text="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Laudantium libero, ad dignissimos velit qui,
-                dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"</p>
-              <div className="rowed">
-                <img src={img_Cassandra_Warren} alt="Picture of Cassandra Warren"/>
-                <div className="client-information">
-                  <h3>Cassandra Warren</h3>
-                  <p>Business Manager, Dorfus</p>
-                </div>
-              </div>
-            </div>
-            <div className="client-text">
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-              <p className="review-text">"Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"
+                name="Cassandra Warren" description="Business Manager, Dorfus" image={img_Cassandra_Warren} altText="Picture of Cassandra Warren" />
+            <Testimonial text="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Laudantium libero, ad dignissimos velit qui,
-                dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"</p>
-              <div className="rowed">
-                <img src={img_Amanda_Tulling} alt="Picture of Amanda Tulling"/>
-                <div className="client-information">
-                  <h3>Amanda Tulling</h3>
-                  <p>Senior Developer, Square</p>
-                </div>
-              </div>
-            </div>
-            <div className="client-text">
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-              <p className="review-text">"Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"
+                name="Amanda Tulling" description="Senior Developer, Square" image={img_Amanda_Tulling} altText="Picture of Amanda Tulling" />
+            <Testimonial text="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Laudantium libero, ad dignissimos velit qui,
-                dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"</p>
-              <div className="rowed">
-                <img src={img_Jack_Mcdogglas} alt="Picture of Jack McDogglas"/>
-                <div className="client-information">
-                  <h3>Jack McDogglas</h3>
-                  <p>Key Account Manager, Gobona</p>
-                </div>
-              </div>
-            </div>
-
+                dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"
+                name="Jack Mcdogglas" description="Key Account Manager, Gobona" image={img_Jack_Mcdogglas} altText="Picture of Jack Mcdogglas" />
           </div>
           <div className="all-reviews">
-            <a href="reviews.html" className="btn-black">
-              All Reviews <i className="fa-solid fa-square-up-right"></i>
-            </a>
+            <Button type="black" text="All Reviews" url="reviews" />
           </div>
 
         </div>

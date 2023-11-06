@@ -18,7 +18,7 @@ const OurServicesSection = () => {
 
           <div className="flexbox">
               <ServiceBox title="Business Advice" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="/businessadvice"/>
-              <ServiceBox  title="Startup Business" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="/startupbusiness" classes="item-active"/>
+              <ServiceBox title="Startup Business" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="/startupbusiness" classesArray={["item-active", "button-active"]}/>
               <ServiceBox title="Financial Advice" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="/financialadvice"/>
               <ServiceBox title="Risk Management" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus." url="/riskmanagement"/>
           </div>

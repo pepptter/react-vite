@@ -113,27 +113,6 @@
                 }
             }
         }
-        .btn-transparent {
-            background-color: transparent;
-            border: 1px solid #191919;
-            color: #191919;
-            text-decoration: none;
-            padding: 12px 30px;
-            font-weight: 600;
-            font-size: 16px;
-            border-radius: 25px;
-
-            i {
-                margin-left: 8px;
-                font-size: 0.9em;
-            }
-
-            &:hover {
-                background-color: #191919;
-                color: #F9D783;
-            }
-
-        }
 
         .paragraph {
             color: #191919;

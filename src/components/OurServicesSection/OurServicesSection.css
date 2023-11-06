@@ -95,24 +95,6 @@
   background-color: #ffffff;
   border-color: #ffffff;
 }
-.our-services .container .btn-transparent {
-  background-color: transparent;
-  border: 1px solid #191919;
-  color: #191919;
-  text-decoration: none;
-  padding: 12px 30px;
-  font-weight: 600;
-  font-size: 16px;
-  border-radius: 25px;
-}
-.our-services .container .btn-transparent i {
-  margin-left: 8px;
-  font-size: 0.9em;
-}
-.our-services .container .btn-transparent:hover {
-  background-color: #191919;
-  color: #F9D783;
-}
 .our-services .container .paragraph {
   color: #191919;
   font-family: "Inter", sans-serif;

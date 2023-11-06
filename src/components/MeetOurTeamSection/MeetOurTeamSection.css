@@ -67,6 +67,10 @@
   font-weight: 400;
   font-size: 16px;
 }
+.meet-our-team .container .team-members .text-decoration {
+  text-decoration: none;
+  color: #191919;
+}
 .meet-our-team .container .dotline {
   display: none;
 }

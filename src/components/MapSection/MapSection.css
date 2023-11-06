@@ -1,0 +1,13 @@
+.map-section {
+  text-align: center;
+}
+.map-section img {
+  max-width: 100%;
+  border-top: 1px solid rgba(25, 25, 25, 0.2);
+}
+@media (min-width: 992px) {
+  .map-section img {
+    border-top: none;
+    margin-top: 120px;
+  }
+}

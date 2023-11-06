@@ -4,6 +4,7 @@ import img_background_lines_white_right from '@images/background-lines-white-rig
 import crito_logo_white from '@images/logotype-white.svg'
 
 import { NavLink } from 'react-router-dom'
+import FooterLinksComponent from './FooterLinksComponent'
 const FooterLinksSection = () => {
   return (
     <section className="footer-links">
@@ -18,34 +19,10 @@ const FooterLinksSection = () => {
           Voluptates laborum nam ratione minus necessitatibus, iure praesentium.</p>
       </div>
       <div className="links-grid">
-        <div className="grid-item">
-          <h3>Company</h3>
-          <a href="about.html" target="_blank">About</a>
-          <a href="features.html" target="_blank">Features</a>
-          <a href="works.html" target="_blank">Works</a>
-          <a href="career.html" target="_blank">Career</a>
-        </div>
-        <div className="grid-item">
-          <h3>Help</h3>
-          <a href="customer-support.html" target="_blank">Customer Support</a>
-          <a href="delivery-details.html" target="_blank">Delivery Details</a>
-          <a href="terms-and-conditions.html" target="_blank">Terms & Conditions</a>
-          <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
-        </div>
-        <div className="grid-item">
-          <h3>Resources</h3>
-          <a href="free-ebooks.html" target="_blank">Free eBooks</a>
-          <a href="development-tutorial.html" target="_blank">Development Tutorial</a>
-          <a href="how-to-blog.html" target="_blank">How To - Blog</a>
-          <a href="https://youtube.com/resources-playlist" target="_blank">Youtube Playlist</a>
-        </div>
-        <div className="grid-item right-align">
-          <h3>Link</h3>
-          <a href="free-ebooks.html" target="_blank">Free eBooks</a>
-          <a href="development-tutorial.html" target="_blank">Development Tutorial</a>
-          <a href="how-to-blog.html" target="_blank">How To - Blog</a>
-          <a href="https://youtube.com/resources-playlist" target="_blank">Youtube Playlist</a>
-        </div>
+        <FooterLinksComponent title="Company" text1="About" text2="Features" text3="Works" text4="Career" url1="/about" url2="/features" url3="/works" url4="/career" />
+        <FooterLinksComponent title="Help" text1="Customer Support" text2="Delivery Details" text3="Terms & Conditions" text4="Privacy Policy" url1="/help/support" url2="/help/deliverydetails" url3="/help/termsandconditions" url4="/help/privacypolicy" />
+        <FooterLinksComponent title="Resources" text1="Free eBooks" text2="Development Tutorial" text3="How to - Blog" text4="Youtube Playlist" url1="/resources/ebooks" url2="/resources/developmenttutorial" url3="/resources/howto-blog" url4="/resources/youtube-playlist" />
+        <FooterLinksComponent title="Links" text1="Free eBooks" text2="Development Tutorial" text3="How to - Blog" text4="Youtube Playlist" url1="/links/ebooks" url2="/links/developmenttutorial" url3="/links/howto-blog" url4="/links/youtube-playlist" />
       </div>
     </div>
   </section>

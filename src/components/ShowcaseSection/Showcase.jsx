@@ -15,8 +15,8 @@ const Showcase = () => {
               Establish your vision and value proposition and turn them into
               testable prototypes.
             </p>
-            <Button type="yellow" text="Get Consulting" url="/consulting.html"/>
-            <Button type="transparent"text="Learn More" url="/services.html" />
+            <Button type="yellow" text="Get Consulting" url="/consulting"/>
+            <Button type="transparent"text="Learn More" url="/services" />
           </div>
           <img src={img_showcaseimage} alt="image of a man in a suit with a tablet" />
         </div>

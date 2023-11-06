@@ -79,14 +79,6 @@
                 margin-left: 50px;
             }
 
-            .colorwhite {
-                color: white;
-            }
-
-            .colorwhite:hover {
-                color: #191919;
-            }
-
             .paragraph {
                 color: #191919;
                 font-family: 'Inter', sans-serif;
@@ -95,38 +87,21 @@
             }
 
             .flex-text {
-                margin-left: 20px;
+                margin-left: 15px;
                 text-decoration: none;
                 color: #191919;
 
                 &:hover {
-
+                    text-decoration: underline;
+                    font-weight: 600;
                     .btn-round-transparent {
                         transition: font-weight 0.25s ease-in-out, background-color 0.2s ease-in-out, color 0.25s ease-in-out;
 
                         color: #ffffff;
                         background-color: #191919;
                     }
-
-                    .margin {
-                        text-decoration: underline;
-                        font-weight: 600;
-
-                    }
-
                 }
-
-
-
             }
-
-        }
-
-        .margin {
-            margin-left: 10px;
-
         }
     }
-
-
 }

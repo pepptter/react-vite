@@ -1,6 +1,8 @@
 import './AboutCompanySection.css'
 import React from 'react'
 import img_samantha_image from '@images/samantha-image.jpg'
+import Button from '../Generics/Button'
+import { Link } from 'react-router-dom'
 
 const AboutCompanySection = () => {
   return (
@@ -29,18 +31,13 @@ const AboutCompanySection = () => {
                 Omnis esse quasi incidunt adipisci accusantium libero provident voluptate amet.
               </p>
             </div>
-            <a className="btn-black colorwhite" href="about.html">Learn More <i className="fa-solid fa-square-up-right"></i></a>
-            <a href="introvideo.html" className="flex-text">
-              <div className="btn-round-transparent">
-                <i className="fa-solid fa-play">
-                </i>
-              </div>
-              <span className="margin">Intro Video</span>
-
-            </a>
-
-
-
+            <div className='d-flex'>
+            <Button type="black" text="Learn More" url="/about"/>
+            <div className='ms-3  flex-text'>
+              <Button type="round" url="/introvideo" classesArray={["fa-solid", "fa-play"]}/>
+              <Link to="/introvideo" className="flex-text">Intro Video</Link>
+            </div>
+            </div>
           </div>
         </div>
 
