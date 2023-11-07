@@ -1,6 +1,6 @@
 import React from 'react';
 import './LetsConnectSection.css'
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import background_lines from '@images/background-lines.svg'
 
 const LetsConnectSection = () => {

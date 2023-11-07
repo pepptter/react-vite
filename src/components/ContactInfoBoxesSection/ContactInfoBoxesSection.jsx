@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './ContactInfoBoxesSection.css'
 const ContactInfoBoxesSection = () => {
   return (
     <section className="contact-info-boxes-section">

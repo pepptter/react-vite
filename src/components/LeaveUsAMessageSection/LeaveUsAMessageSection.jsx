@@ -1,4 +1,6 @@
 import React from 'react'
+import FormComponent from './FormComponent'
+import './LeaveUsAMessageSection.css'
 
 const LeaveUsAMessageSection = () => {
   return (
@@ -9,29 +11,7 @@ const LeaveUsAMessageSection = () => {
                         <h2>Leave us a message</h2>
                         <h2>for any information.</h2>
                     </div>
-                    <form id="message-form" className="message-form">
-                        <div className="one-row-form">
-                        <input
-                            id="fullName"
-                            type="text"
-                            name="fullName"
-                            placeholder="Name*"
-                        />
-                        </div>
-                        <div className="one-row-form">
-                        <input
-                            id="emailAddress"
-                            type="email"
-                            name="emailAddress"
-                            placeholder="Email*"
-                        />
-                        </div>
-                        <div className="multi-row-form">
-                            <textarea id="yourMessage" name="yourMessage" placeholder="Your Message* "></textarea>
-                        </div>
-                        <button type="submit" className="btn-yellow" >Submit</button>
-
-                      </form>
+                    <FormComponent />
                 </div>
 
             </div>
