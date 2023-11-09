@@ -41,7 +41,14 @@
                         outline: none;
                         border: 1px solid rgba(25, 25, 25, 0.10);
                         width: 77.272727%;
+
+                        &.error{
+                            border: 1px solid rgba(255, 0, 0, 1);
+                            background-color: rgb(250, 200, 200);
+
+                        }
                     }
+
                 }
 
                 .multi-row-form {
@@ -58,6 +65,10 @@
                         height: 120px;
                         width: 77.272727%;
 
+                        &.error{
+                            border: 1px solid rgba(255, 0, 0, 1);
+                            background-color: rgb(250, 200, 200);
+                        }
                         @media (min-width: 992px) {
                             height: 160px;
                         }

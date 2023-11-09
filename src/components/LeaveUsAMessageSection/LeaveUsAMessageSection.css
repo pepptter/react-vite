@@ -37,6 +37,10 @@
   border: 1px solid rgba(25, 25, 25, 0.1);
   width: 77.272727%;
 }
+.leave-us-a-message-section .container .title-and-form .message-form .one-row-form input.error {
+  border: 1px solid rgb(255, 0, 0);
+  background-color: rgb(250, 200, 200);
+}
 .leave-us-a-message-section .container .title-and-form .message-form .multi-row-form textarea {
   margin-bottom: 15px;
   color: #191919;
@@ -49,6 +53,10 @@
   resize: none;
   height: 120px;
   width: 77.272727%;
+}
+.leave-us-a-message-section .container .title-and-form .message-form .multi-row-form textarea.error {
+  border: 1px solid rgb(255, 0, 0);
+  background-color: rgb(250, 200, 200);
 }
 @media (min-width: 992px) {
   .leave-us-a-message-section .container .title-and-form .message-form .multi-row-form textarea {
