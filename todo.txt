@@ -1,13 +1,13 @@
 göra klart contactsidan utom formulär!! CHECK!!
 
 
-allt som ska göras om till components (VÄNTAR MED LOGOS HOOKS?)
+allt som ska göras om till components (VÄNTAR MED LOGOS?)
 
 NEWS?
 
-hooks?
+hooks
 
-formuläret!
+formuläret! check!
 alla knappar CHECK utom > ? knappen för newsletter SIGNUP formuläret??
 
 menyn i mobilläge!

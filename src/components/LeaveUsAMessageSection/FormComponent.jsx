@@ -4,6 +4,7 @@ import * as Yup from 'yup';
 
 const FormComponent = () => {
 
+    const [errorMessage, setErrorMessage] = useState('')
     const form = useFormik( {
         initialValues: {
             name: '',
@@ -13,7 +14,7 @@ const FormComponent = () => {
         validateOnBlur: true,
         validationSchema: Yup.object({
             name: Yup.string()
-                .matches(/^[a-zA-Z]{2,}$/, 'Name must contain at least 2 letters')
+                .matches(/^[a-zA-Z -]{2,}$/, 'Name must contain at least 2 letters')
                 .required('Name is required'),
             email: Yup.string()
                 .matches(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/, 'Invalid email address')
@@ -21,35 +22,47 @@ const FormComponent = () => {
             message: Yup.string()
                 .required('Enter a message')
         }),
-        onSubmit: (event) => {
-            form.setSubmitting(false);
-
+        onSubmit: async (values) => {
+            await handleSubmit(values)
         }
     })
 
 
-    const handleSubmit = async (event) => {
-        event.preventDefault()
-        const user= {name, email, message}
-        const json= JSON.stringify(user)
-        await fetch("the api" ,{
-            method: "post",
-            headers: {
-                    "Content-Type": "application/json"
-            },
-            body: json
-        })
-    }
+    const handleSubmit = async (user) => {
+        try {
+            const response = await fetch("https://win23-assignment.azurewebsites.net/api/contactform", {
+                method: "post",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(user),
+            })
+                switch(response.status){
+                case 200:
+                    alert('Status code 200! Message sent!')
+                    break
+                default:
+                    const result = await response.json()
+                    alert(result.message)
+                    break
+
+            }
+        } catch (error) {
+            console.error('Error:', error)
+            setErrorMessage(`An unexpected error occurred: ${error.message}`);
+            alert(`An unexpected error occurred: ${error.message}`);
+        }
+
+    };
 
 
   return (
         <>
-            <Formik
-                initialValues={form.initialValues}
-                validationSchema={form.validationSchema}
-                onSubmit={form.handleSubmit}
-                >
-                <form id="message-form" className="message-form" noValidate onSubmit={(event) => handleSubmit(event)}>
+
+
+
+
+                <form id="message-form" className="message-form" noValidate onSubmit={form.handleSubmit}>
                     <div className="one-row-form">
 
                     <input
@@ -87,7 +100,7 @@ const FormComponent = () => {
                     <button type="submit" className="btn-yellow" >Submit</button>
 
                 </form>
-            </Formik>
+
         </>
     )
 }

@@ -9,7 +9,7 @@ const ProjectComponent = ({title, url, image, altText}) => {
     <div className="readmore">
       Read more <i className="fa-solid fa-square-up-right"></i>
     </div>
-  </Link>  )
+    </Link>  )
 }
 
 export default ProjectComponent

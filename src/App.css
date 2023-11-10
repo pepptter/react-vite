@@ -118,3 +118,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.grayish {
+  background-color: #F0EFE9;
+}

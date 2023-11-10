@@ -2,10 +2,10 @@ import React from 'react'
 import Header from '../components/HeaderSection/Header'
 import FooterCRAndSMSection from '../components/Footer/FooterCRAndSMSection'
 import FooterLinksSection from '../components/Footer/FooterLinksSection'
-import LetsConnectSection from '../components/LetsConnectSection/LetsConnectSection'
 import ContactInfoBoxesSection from '../components/ContactInfoBoxesSection/ContactInfoBoxesSection'
 import LeaveUsAMessageSection from '../components/LeaveUsAMessageSection/LeaveUsAMessageSection'
 import MapSection from '../components/MapSection/MapSection'
+import SubPageTitleSection from '../components/SubPageTitleSection/SubPageTitleSection'
 
 const Contact = () => {
   return (
@@ -15,7 +15,7 @@ const Contact = () => {
           <Header />
         </header>
         <main>
-          <LetsConnectSection />
+          <SubPageTitleSection title="Let's Connect"/>
           <ContactInfoBoxesSection />
           <LeaveUsAMessageSection />
           <MapSection />

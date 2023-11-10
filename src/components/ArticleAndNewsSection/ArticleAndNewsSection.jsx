@@ -8,7 +8,8 @@ import Article from './Article'
 
 const ArticleAndNewsSection = () => {
   return (
-<section className="article-and-news">
+    <div>
+      <section className={`article-and-news`}>
         <div className="container">
           <div className="section-header">
             <div className="section-title">
@@ -16,7 +17,7 @@ const ArticleAndNewsSection = () => {
               <h2>Get Every Single Articles & News</h2>
             </div>
             <div className="browse-button">
-              <Button type="transparent" text="Browse Articles" url="/articles"/>
+              <Button type="transparent" text="Browse Articles" url="/news"/>
             </div>
           </div>
           <div className="articles">
@@ -38,6 +39,7 @@ const ArticleAndNewsSection = () => {
 
 
       </section>
+      </div>
   )
 }
 

@@ -1,0 +1,49 @@
+.container{
+
+    .grid-layout{
+        display:grid;
+        grid-template-columns: 1fr;
+
+
+        @media (min-width: 920px){
+            grid-template-columns: 2fr 1fr;
+            gap: 150px;
+        }
+
+        .date-category-name-box{
+            margin-left: 20px;
+            display: flex;
+            gap: 30px;
+        }
+        .dots{
+            color: #f9d783;
+        }
+        .quote-text{
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+    }
+    img{
+        margin-top: 70px;
+        margin-bottom: 40px;
+        max-width: 760px;
+        max-height: 500px;;
+    }
+
+    .category-buttons{
+        margin-top: 70px;
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: space-between;
+
+        a{
+            text-decoration: none;
+            color: black;
+            padding: 5px 25px;
+            background-color: rgba(19, 19, 19, 0.05);
+            border-radius: 25px;
+        }
+    }
+
+
+}
