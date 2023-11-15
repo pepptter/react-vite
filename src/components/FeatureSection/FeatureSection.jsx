@@ -7,16 +7,17 @@ import img_square_logo from '@images/square-logo.png'
 import img_gobona_logo from '@images/gobona-logo.png'
 import Button from '../Generics/Button'
 import Feature from './Feature'
+import LogoComponent from './LogoComponent'
 
 const FeatureSection = () => {
   return (
     <section className="features">
         <div className="logotypes">
-          <img src={img_paperz_logo} alt="paperz logotype" />
-          <img src={img_dorfus_logo} alt="dorfus logotype" />
-          <img src={img_martino_logo} alt="martino logotype" />
-          <img src={img_square_logo} alt="square logotype" />
-          <img src={img_gobona_logo} alt="gobona logotype" />
+          <LogoComponent image={img_paperz_logo} altText="paperz logotype" />
+          <LogoComponent image={img_dorfus_logo} altText="dorfus logotype" />
+          <LogoComponent image={img_martino_logo} altText="martino logotype" />
+          <LogoComponent image={img_square_logo} altText="square logotype" />
+          <LogoComponent image={img_gobona_logo} altText="gobona logotype" />
         </div>
 
         <div className="features-section">

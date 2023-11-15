@@ -1,34 +1,34 @@
 import React, { useEffect } from 'react'
 import './NewsDetailsSection.css'
-import { useState } from 'react'
 import { useParams } from 'react-router-dom'
-import NewsArticle from '../NewsDetailsSection/NewsArticle'
+import NewsArticleDetails from './NewsArticleDetails'
 import ArticleAndNewsSection from '../ArticleAndNewsSection/ArticleAndNewsSection'
+import { useArticleContext } from '../../Contexts/ArticleContext'
 
 
 const NewsDetailsSection = () => {
-    const [showArticle, setShowArticle] = useState({})
+    const { article, fetchArticle, clearArticle } = useArticleContext()
     const { id }= useParams()
 
     useEffect(() => {
-        getArticle()
-    }, [])
-    const getArticle = async () => {
+        getArticle(id);
+        return () => clearArticle()
+      }, []);
+
+      const getArticle = async () => {
         if (id !== undefined) {
-            const result = await fetch(`https://win23-assignment.azurewebsites.net/api/articles/${id}`)
-
-            if (result.status === 200)
-            {
-                setShowArticle(await result.json())
-            }
+          fetchArticle(id);
         }
-    }
+      };
      return (
-    <div >
-
+    <div>
         <div className="container">
             <div className='grid-layout'>
-                <NewsArticle articles={showArticle} />
+                {article ? (
+                    <NewsArticleDetails articles={article} />
+                ) : (
+                    <p>Loading article...</p>
+                )}
                 <div className='right-section'>
                     <div className="search-bar">
                         <input type="text" placeholder="Search..." className="search-input"/>

@@ -1,5 +1,9 @@
-.container{
 
+.container{
+    text-align: center;
+    @media(min-width:920px){
+        text-align: left;
+    }
     .grid-layout{
         display:grid;
         grid-template-columns: 1fr;
@@ -11,9 +15,11 @@
         }
 
         .date-category-name-box{
-            margin-left: 20px;
+
+            @media (min-width: 920px){margin-left: 20px;
             display: flex;
             gap: 30px;
+            }
         }
         .dots{
             color: #f9d783;
@@ -25,8 +31,13 @@
         img{
             margin-top: 50px;
             margin-bottom: 40px;
-            max-width: 760px;
-            max-height: 500px;;
+            max-width: 100%;
+            height: auto;
+            @media (min-width: 920px){
+                max-width: 760px;
+                max-height: 500px;
+            }
+
         }
         h1{
             margin-top: 140px;
@@ -43,7 +54,13 @@
         margin-top: 70px;
         margin-bottom: 60px;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        @media (min-width: 920px){
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
 
         a{
             text-decoration: none;
@@ -58,8 +75,10 @@
         flex-direction: column;
         .search-bar{
             margin-top: 80px;
+            margin-bottom: 50px;
             @media (min-width: 920px){
                 margin-top: 350px;
+                margin-bottom: 0px;
             }
             input {
                 color: #191919;
@@ -74,11 +93,13 @@
 
         }
         .right-boxes{
+        @media (min-width: 920px){
             padding-left: 30px;
             padding-right: 30px;
             padding-top: 50px;
             padding-bottom: 40px;
-            margin-top: 40px;
+            margin-top: 40px;}
+
             border: 1px solid #D3E6FB;
             p{
                 font-size: 16px;
@@ -92,6 +113,7 @@
                 margin-bottom: 30px;
             }
             .underlined-text {
+            @media (min-width: 920px){
                 position: relative;
                 &::before {
                 content: "";
@@ -101,6 +123,7 @@
                 position: absolute;
                 bottom: 0;
                 left: 0;
+                }
                 }
             }
         .underlines{

@@ -9,7 +9,7 @@ const formatArticleDate = (dateString) => {
     return { month, day, year };
 };
 
-const NewsArticle = ({ articles }) => {
+const NewsArticleDetails = ({ articles }) => {
     const { month, day, year } = formatArticleDate(articles.published);
 
   return (
@@ -46,4 +46,4 @@ const NewsArticle = ({ articles }) => {
   )
 }
 
-export default NewsArticle
+export default NewsArticleDetails
