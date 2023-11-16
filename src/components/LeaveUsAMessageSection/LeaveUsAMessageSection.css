@@ -26,8 +26,12 @@
     width: 77.272727%;
   }
 }
+.leave-us-a-message-section .container .title-and-form .message-form .error-message-format {
+  font-weight: 500;
+  color: rgb(255, 0, 0);
+  margin: 7px 0px;
+}
 .leave-us-a-message-section .container .title-and-form .message-form .one-row-form input {
-  margin-bottom: 25px;
   color: #191919;
   text-decoration: none;
   padding: 15px 42px;
@@ -42,7 +46,6 @@
   background-color: rgb(250, 200, 200);
 }
 .leave-us-a-message-section .container .title-and-form .message-form .multi-row-form textarea {
-  margin-bottom: 15px;
   color: #191919;
   text-decoration: none;
   padding: 15px 42px;
@@ -88,6 +91,11 @@
 }
 .leave-us-a-message-section .container .title-and-form .flex-class .submit-message.red {
   background-color: rgb(238, 118, 118);
+}
+.leave-us-a-message-section .container .title-and-form .flex-class .submit-message.hidden {
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
 }
 .leave-us-a-message-section .container .title-and-form .flex-class .error-message {
   color: #ff0000;
