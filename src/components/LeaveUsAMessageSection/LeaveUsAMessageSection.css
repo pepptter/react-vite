@@ -27,7 +27,7 @@
   }
 }
 .leave-us-a-message-section .container .title-and-form .message-form .one-row-form input {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   color: #191919;
   text-decoration: none;
   padding: 15px 42px;
@@ -62,4 +62,35 @@
   .leave-us-a-message-section .container .title-and-form .message-form .multi-row-form textarea {
     height: 160px;
   }
+}
+.leave-us-a-message-section .container .title-and-form .flex-class {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+}
+.leave-us-a-message-section .container .title-and-form .flex-class .additional-message {
+  margin-top: 5px;
+}
+.leave-us-a-message-section .container .title-and-form .flex-class.column {
+  flex-direction: column;
+}
+.leave-us-a-message-section .container .title-and-form .flex-class.row {
+  flex-direction: row;
+}
+.leave-us-a-message-section .container .title-and-form .flex-class .submit-message {
+  padding: 15px 20px;
+  margin-top: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.leave-us-a-message-section .container .title-and-form .flex-class .submit-message.green {
+  background-color: #7fe078;
+}
+.leave-us-a-message-section .container .title-and-form .flex-class .submit-message.red {
+  background-color: rgb(238, 118, 118);
+}
+.leave-us-a-message-section .container .title-and-form .flex-class .error-message {
+  color: #ff0000;
+  font-size: 16px;
+  margin-top: 5px;
 }
