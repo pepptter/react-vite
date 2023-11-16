@@ -7,7 +7,6 @@ const FormComponent = () => {
 
     const [submitMessage, setSubmitMessage] = useState({text:'', type:''})
     const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-    const [errorMessage, setErrorMessage] = useState('')
 
     const form = useFormik( {
         initialValues: {
@@ -98,7 +97,8 @@ const FormComponent = () => {
                     </textarea>
                 </div>
                 <p className='error-message-format'>{`${form.touched.message && form.errors.message ? form.errors.message : '\u00A0'}`}</p>
-                <p className='correct-message'> Please correct the error(s) to be able to submit your message!</p>
+                <p className={`correct-message ${form.errors.name || form.errors.email || form.errors.message ? 'show-message' : 'hide-message'}`}>
+                     Please correct the error(s) to be able to submit your message!</p>
                 <button type="submit" className="btn-yellow" >Submit</button>
 
             </form>
@@ -110,7 +110,9 @@ const FormComponent = () => {
                 </div>
             ) : (
                 <div className="flex-class">
-                    <div className="submit-message hidden">{' '}</div>
+                    <div className="submit-message hidden">
+                        {'\u00A0'}
+                    </div>
                 </div>
             )}
         </>

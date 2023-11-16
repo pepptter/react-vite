@@ -26,6 +26,12 @@
     width: 77.272727%;
   }
 }
+.leave-us-a-message-section .container .title-and-form .message-form .show-message {
+  visibility: visible;
+}
+.leave-us-a-message-section .container .title-and-form .message-form .hide-message {
+  visibility: hidden;
+}
 .leave-us-a-message-section .container .title-and-form .message-form .error-message-format {
   font-weight: 500;
   color: rgb(255, 0, 0);
@@ -90,7 +96,7 @@
   background-color: #7fe078;
 }
 .leave-us-a-message-section .container .title-and-form .flex-class .submit-message.red {
-  background-color: rgb(238, 118, 118);
+  background-color: #ee7676;
 }
 .leave-us-a-message-section .container .title-and-form .flex-class .submit-message.hidden {
   visibility: hidden;

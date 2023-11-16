@@ -28,7 +28,12 @@
                         width: 77.272727%;
                     }
                 }
-
+                .show-message{
+                    visibility: visible;
+                }
+                .hide-message{
+                    visibility: hidden;
+                }
                 .error-message-format{
                     font-weight: 500;
                     color: rgba(255, 0, 0, 1);
@@ -100,7 +105,7 @@
                         background-color: #7fe078;
                     }
                     &.red{
-                        background-color: rgb(238, 118, 118);
+                        background-color: #ee7676;
                     }
                     &.hidden{
                         visibility: hidden;
