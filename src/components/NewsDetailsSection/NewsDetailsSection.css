@@ -96,6 +96,8 @@
   background-color: #F3F3F3;
 }
 .container .right-section .right-boxes {
+  margin-top: 20px;
+  padding-top: 20px;
   border: 1px solid #D3E6FB;
 }
 @media (min-width: 920px) {

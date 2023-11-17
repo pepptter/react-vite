@@ -3,15 +3,16 @@ import logotype from "@images/logotype.svg";
 import './Header.css'
 import Button from "../Generics/Button";
 import { NavLink, Link } from 'react-router-dom'
+import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   return (
     <div>
       <header>
         <div className="container">
-          <button className="btn-menu-bars">
-            <i className="fa-solid fa-bars-staggered"></i>
-          </button>
+          <div className="btn-menu-bars">
+            <MobileMenu />
+          </div>
           <div className="logotype">
             <Link to="/">
               <img src={logotype} alt="Crito Logotype" />

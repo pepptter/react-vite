@@ -20,6 +20,11 @@ header .container .btn-menu-bars {
   font-size: 25px;
   background-color: transparent;
 }
+header .container .btn-menu-bars .btn-menu {
+  position: relative;
+  z-index: 1;
+  border: none;
+}
 @media (min-width: 992px) {
   header .container .btn-menu-bars {
     display: none;

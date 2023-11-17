@@ -24,13 +24,13 @@ const OurNewsAndArticlesSection = () => {
                         ))}
                         </div>
                     <div className="pages-bar">
-                    <NavLink to="/News/previouspage" className="format-lt-gt">&lt;</NavLink>
+                    <NavLink to="/news/previouspage" className="format-lt-gt">&lt;</NavLink>
                     <NavLink className="active" to="/News/1">1</NavLink>
-                    <NavLink to="/News/2">2</NavLink>
-                    <NavLink to="/News/3">3</NavLink>
-                    <NavLink to="/News/page">...</NavLink>
-                    <NavLink to="/News/9">9</NavLink>
-                    <NavLink to="/News/nextpage" className="format-lt-gt">&gt;</NavLink>
+                    <NavLink to="/news/2">2</NavLink>
+                    <NavLink to="/news/3">3</NavLink>
+                    <NavLink to="/news/page">...</NavLink>
+                    <NavLink to="/news/9">9</NavLink>
+                    <NavLink to="/news/nextpage" className="format-lt-gt">&gt;</NavLink>
                     </div>
                 </div>
                 ) : (

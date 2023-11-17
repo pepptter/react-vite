@@ -23,6 +23,12 @@ header {
             font-size: 25px;
             background-color: transparent;
 
+            .btn-menu{
+                position: relative;
+                z-index: 1;
+                border: none;
+            }
+
             @media(min-width: 992px) {
                 display: none;
             }
