@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const formatArticleDate = (dateString) => {
   const date = new Date(dateString);
@@ -9,6 +9,21 @@ const formatArticleDate = (dateString) => {
 };
 
 const NewsArticle = ({ article }) => {
+  const location = useLocation();
+
+
+  useEffect(() => {
+    const pathname = location.pathname;
+    const articleId = pathname.replace('/news/', '');
+    console.log(articleId)
+
+    if (articleId === article.id) {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    }
+  }, [location.pathname, article.id]);
 
   if (!article) {
     return (
@@ -17,7 +32,6 @@ const NewsArticle = ({ article }) => {
       </div>
     );
   }
-
 
   const { month, day } = formatArticleDate(article.published);
 

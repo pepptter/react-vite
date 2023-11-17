@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import './NewsDetailsSection.css'
 import { useParams } from 'react-router-dom'
 import NewsArticleDetails from './NewsArticleDetails'
@@ -9,23 +9,35 @@ import { useArticleContext } from '../../Contexts/ArticleContext'
 const NewsDetailsSection = () => {
     const { article, fetchArticle, clearArticle } = useArticleContext()
     const { id }= useParams()
+    const articleDetailsRef = useRef(null);
+
 
     useEffect(() => {
         getArticle(id);
         return () => clearArticle()
-      }, []);
+      }, [id]);
 
       const getArticle = async () => {
         if (id !== undefined) {
           fetchArticle(id);
         }
       };
+
+      useEffect(() => {
+        if (articleDetailsRef.current) {
+          articleDetailsRef.current.scrollIntoView({ behavior: 'smooth' })
+          console.log("scrolling")
+        }
+      }, [id])
+
      return (
     <div>
         <div className="container">
             <div className='grid-layout'>
                 {article ? (
-                    <NewsArticleDetails articles={article} />
+                    <div ref={articleDetailsRef}>
+                        <NewsArticleDetails articles={article} />
+                    </div>
                 ) : (
                     <p>Loading article...</p>
                 )}

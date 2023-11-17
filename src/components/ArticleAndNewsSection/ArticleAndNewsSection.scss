@@ -41,52 +41,65 @@
         flex-wrap: nowrap;
       }
 
-      .article-item {
-        @media (max-width: 720px) {
-          img {
-            max-width: 100%;
-          }
+      .articles-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+          @media (min-width: 720px){
+            grid-template-columns: repeat(3, 1fr);
+            }
+
+        a {
+          text-decoration: none;
+          color: #191919;
         }
 
-        position: relative;
 
-        .date-box {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          width: 56px;
-          height: 64px;
-          background-color: #f9d783;
+        .article-item {
+          img{
+              width: 420px;
+              height: 230px;
+            }
+            position: relative;
 
-          position: absolute;
-          top: 20px;
-          left: 20px;
+            .date-box {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 56px;
+              height: 64px;
+              background-color: #f9d783;
 
-          h3 {
-            font-family: "DM Sans", sans-serif;
-            font-size: 22px;
-            font-weight: 700;
-            margin-top: 10px;
-            margin-bottom: -4px;
-          }
-        }
+              position: absolute;
+              top: 20px;
+              left: 20px;
 
-        .article-texts {
-          p {
-            margin-top: 30px;
-            margin-bottom: 30px;
-          }
+              h3 {
+                font-family: "DM Sans", sans-serif;
+                font-size: 22px;
+                font-weight: 700;
+                margin-top: 10px;
+                margin-bottom: -4px;
+              }
+            }
+  
+          .article-texts {
+            p {
+              margin-top: 30px;
+              margin-bottom: 30px;
+            }
 
-          h3 {
-            font-family: "DM Sans", sans-serif;
-            font-size: 22px;
-            font-weight: 700;
-            margin-top: 10px;
-            margin-bottom: -4px;
+            h3 {
+              font-family: "DM Sans", sans-serif;
+              font-size: 22px;
+              font-weight: 700;
+              margin-top: 10px;
+              margin-bottom: -4px;
+            }
           }
         }
       }
-    }
+
 
     .dotline {
       display: none;
@@ -114,5 +127,7 @@
         }
       }
     }
+
   }
+
 }

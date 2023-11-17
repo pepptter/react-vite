@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom';
 
 const formatArticleDate = (dateString) => {
@@ -12,6 +12,16 @@ const formatArticleDate = (dateString) => {
 const NewsArticleDetails = ({ articles }) => {
     const { month, day, year } = formatArticleDate(articles.published);
 
+    const scrollPosRef = useRef(null);
+
+    useEffect(() => {
+        if (scrollPosRef.current) {
+            scrollPosRef.current.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+        }
+      }, []);
   return (
     <div>
         <div className='text-area'>

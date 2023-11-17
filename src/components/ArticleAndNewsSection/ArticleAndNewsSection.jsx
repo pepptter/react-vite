@@ -1,12 +1,15 @@
 import './ArticleAndNewsSection.css'
 import React from 'react'
-import img_mar_25 from '@images/mar-25-image.png'
-import img_mar_17 from '@images/mar-17-image.png'
-import img_mar_13 from '@images/mar-13-image.png'
 import Button from '../Generics/Button'
-import Article from './Article'
+import { useArticleContext } from '../../Contexts/ArticleContext'
+import NewsArticle from '../OurNewsAndArticlesSection/NewsArticle'
+import { Link,NavLink } from 'react-router-dom'
+
+
 
 const ArticleAndNewsSection = () => {
+  const { articles } = useArticleContext()
+
   return (
     <div>
       <section className={`article-and-news`}>
@@ -21,13 +24,18 @@ const ArticleAndNewsSection = () => {
             </div>
           </div>
           <div className="articles">
-            <Article title="Business" text="How To Use Digitalization In The Classroom" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Architecto sed hic libero." url="/article" date="25" month="Mar" image={img_mar_25} altText="Woman sitting in a classroom" />
-            <Article title="Business" text="How To Implement Chat GPT In Your Projects" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Architecto sed hic libero." url="/article" date="17" month="Mar" image={img_mar_17} altText="A paper with texts about examples, capabilities and limitation" />
-            <Article title="Business" text="The Guide To Support Modern CSS Design" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Architecto sed hic libero." url="/article" date="13" month="Mar" image={img_mar_13} altText="Picture with a smartphone and two books about javascript and css" />
-          </div>
+            {articles.length > 0 ? (
+              <div>
+                <div className='articles-grid'>
+                  {articles.slice(0, 3).map((article) => (
+                    <NewsArticle key={article.id} article={article} />
+                  ))}
+                </div>
+              </div>
+            ) : (
+             <p>No articles available</p>
+            )}
+            </div>
           <div className="dotline">
             <i className="fa-solid fa-circle active"></i>
             <i className="fa-solid fa-circle"></i>
